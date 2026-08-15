@@ -1,0 +1,100 @@
+.contact-page {
+  padding-top: calc(var(--nav-height) + var(--space-6));
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.contact-page__inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-page__inner h1 {
+  font-size: var(--fs-display-lg);
+  margin: var(--space-2) 0 var(--space-3);
+}
+
+.contact-page__inner > p {
+  color: var(--color-text-muted);
+  max-width: 46ch;
+  margin: 0 auto var(--space-5);
+}
+
+.contact-page__ctas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.contact-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 1.2rem 2.2rem;
+  border: 1px solid var(--color-border);
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-text);
+  transition: background var(--dur-fast) var(--ease-cinematic),
+    border-color var(--dur-fast) var(--ease-cinematic),
+    color var(--dur-fast) var(--ease-cinematic);
+}
+
+.contact-action svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.contact-action--primary {
+  border-color: var(--color-accent);
+  color: var(--color-accent-soft);
+}
+
+.contact-action--primary:hover {
+  background: var(--color-accent);
+  color: var(--color-bg);
+}
+
+.contact-action:not(.contact-action--primary):hover {
+  border-color: var(--color-text);
+  color: var(--color-text);
+  background: var(--color-bg-surface);
+}
+
+.contact-page__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-border-soft);
+}
+
+.contact-page__email {
+  font-family: var(--font-display);
+  font-size: var(--fs-heading);
+  color: var(--color-text);
+}
+
+.contact-page__email:hover {
+  color: var(--color-accent);
+}
+
+.contact-page__details > span {
+  color: var(--color-text-faint);
+  font-size: var(--fs-small);
+}
+
+@media (max-width: 560px) {
+  .contact-action {
+    width: 100%;
+    justify-content: center;
+  }
+}

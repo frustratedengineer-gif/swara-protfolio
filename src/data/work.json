@@ -1,0 +1,152 @@
+[
+  {
+    "slug": "midnight-reverie",
+    "title": "Midnight Reverie",
+    "category": "Film",
+    "year": "2025",
+    "location": "Pune, India",
+    "summary": "A short film exploring insomnia and the quiet hours before dawn, shot on anamorphic lenses for a wide, dreamlike frame.",
+    "coverId": "1500530855697-b586d89ba3ee",
+    "galleryIds": [
+      "1500530855697-b586d89ba3ee",
+      "1515169067868-5387ec356754",
+      "1478147427282-58a87a120781"
+    ],
+    "credits": { "role": "Director of Photography", "client": "Independent" }
+  },
+  {
+    "slug": "golden-hour-vows",
+    "title": "Golden Hour Vows",
+    "category": "Wedding",
+    "year": "2025",
+    "location": "Lonavala, India",
+    "summary": "A destination wedding film built around natural light — vows exchanged as the sun dropped behind the ghats.",
+    "coverId": "1489599849927-2ee91cede3ba",
+    "galleryIds": [
+      "1489599849927-2ee91cede3ba",
+      "1519167758481-83f550bb49b3",
+      "1533903345306-15d1c30952de"
+    ],
+    "credits": { "role": "Cinematographer", "client": "The Kulkarni Wedding" }
+  },
+  {
+    "slug": "monochrome",
+    "title": "Monochrome",
+    "category": "Commercial",
+    "year": "2024",
+    "location": "Mumbai, India",
+    "summary": "A product campaign for a watch brand, built entirely on high-contrast black-and-white studio lighting.",
+    "coverId": "1522673607200-164d1b6ce486",
+    "galleryIds": [
+      "1522673607200-164d1b6ce486",
+      "1478720568477-152d9b164e26",
+      "1511285560929-80b456fea0bc"
+    ],
+    "credits": { "role": "Director of Photography", "client": "Confidential" }
+  },
+  {
+    "slug": "quiet-faces",
+    "title": "Quiet Faces",
+    "category": "Portrait",
+    "year": "2024",
+    "location": "Pune, India",
+    "summary": "An ongoing portrait series shot on a single 85mm prime, focused on stillness and unguarded expression.",
+    "coverId": "1519741497674-611481863552",
+    "galleryIds": [
+      "1519741497674-611481863552",
+      "1509281373149-e957c6296406",
+      "1512790182412-b19e6d62bc39"
+    ],
+    "credits": { "role": "Photographer", "client": "Personal project" }
+  },
+  {
+    "slug": "streets-of-pune",
+    "title": "Streets of Pune",
+    "category": "Documentary",
+    "year": "2024",
+    "location": "Pune, India",
+    "summary": "A documentary short following three vendors through a single market day, shot handheld on available light.",
+    "coverId": "1517841905240-472988babdf9",
+    "galleryIds": [
+      "1517841905240-472988babdf9",
+      "1517457373958-b7bdd4587205",
+      "1524504388940-b1c1722653e1"
+    ],
+    "credits": { "role": "Director / DP", "client": "Independent" }
+  },
+  {
+    "slug": "after-the-rain",
+    "title": "After the Rain",
+    "category": "Film",
+    "year": "2023",
+    "location": "Matheran, India",
+    "summary": "A moody, monsoon-lit short shot over three days in the hills, leaning on natural haze and diffused light.",
+    "coverId": "1550684848-fac1c5b4e853",
+    "galleryIds": [
+      "1550684848-fac1c5b4e853",
+      "1533105079780-92b9be482077",
+      "1537633552985-df8429e8048b"
+    ],
+    "credits": { "role": "Cinematographer", "client": "Independent" }
+  },
+  {
+    "slug": "two-hearts-one-frame",
+    "title": "Two Hearts, One Frame",
+    "category": "Wedding",
+    "year": "2023",
+    "location": "Goa, India",
+    "summary": "A beach wedding shot across two days — the ceremony, the quiet morning before, and the celebration after.",
+    "coverId": "1554080353-a576cf803bda",
+    "galleryIds": [
+      "1554080353-a576cf803bda",
+      "1493863641943-9b68992a8d07",
+      "1517649763962-0c623066013b"
+    ],
+    "credits": { "role": "Cinematographer", "client": "The Fernandes Wedding" }
+  },
+  {
+    "slug": "product-in-motion",
+    "title": "Product in Motion",
+    "category": "Commercial",
+    "year": "2023",
+    "location": "Pune, India",
+    "summary": "A fragrance launch campaign combining macro product shots with slow-motion liquid and light studies.",
+    "coverId": "1465101162946-4377e57745c3",
+    "galleryIds": [
+      "1465101162946-4377e57745c3",
+      "1511285560929-80b456fea0bc",
+      "1478720568477-152d9b164e26"
+    ],
+    "credits": { "role": "Director of Photography", "client": "Confidential" }
+  },
+  {
+    "slug": "portraits-of-silence",
+    "title": "Portraits of Silence",
+    "category": "Portrait",
+    "year": "2022",
+    "location": "Pune, India",
+    "summary": "A study of solitude shot in available window light, printed as a limited gallery series.",
+    "coverId": "1512790182412-b19e6d62bc39",
+    "galleryIds": [
+      "1512790182412-b19e6d62bc39",
+      "1519741497674-611481863552",
+      "1509281373149-e957c6296406"
+    ],
+    "credits": { "role": "Photographer", "client": "Gallery exhibition" }
+  },
+  {
+    "slug": "faces-of-the-city",
+    "title": "Faces of the City",
+    "category": "Documentary",
+    "year": "2022",
+    "location": "Mumbai, India",
+    "summary": "A short documentary on the local train commute, told through the faces of daily riders.",
+    "coverId": "1517457373958-b7bdd4587205",
+    "galleryIds": [
+      "1517457373958-b7bdd4587205",
+      "1517841905240-472988babdf9",
+      "1524504388940-b1c1722653e1"
+    ],
+    "credits": { "role": "Director / DP", "client": "Independent" }
+  }
+]

@@ -1,0 +1,61 @@
+:root {
+  /* ---- palette: dark, cinematic, editorial ---- */
+  --color-bg: #0a0a0a;
+  --color-bg-raised: #121212;
+  --color-bg-surface: #161614;
+  --color-border: #2a2a26;
+  --color-border-soft: #1e1e1b;
+
+  --color-text: #f2f0ea;
+  --color-text-muted: #a8a49a;
+  --color-text-faint: #6f6b62;
+
+  --color-accent: #c9a876;
+  --color-accent-soft: #e3cda0;
+  --color-accent-dim: #8a7350;
+
+  --color-overlay: rgba(10, 10, 10, 0.72);
+  --color-overlay-soft: rgba(10, 10, 10, 0.4);
+
+  /* ---- type ---- */
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-display-alt: "Cinzel", "Cormorant Garamond", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --fs-display-xl: clamp(3.2rem, 3rem + 4vw, 7.5rem);
+  --fs-display-lg: clamp(2.6rem, 2.2rem + 3vw, 5rem);
+  --fs-display-md: clamp(2rem, 1.7rem + 2vw, 3.2rem);
+  --fs-heading: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --fs-lead: clamp(1.15rem, 1.05rem + 0.4vw, 1.4rem);
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+  --fs-eyebrow: 0.78rem;
+
+  --lh-tight: 1.05;
+  --lh-snug: 1.25;
+  --lh-normal: 1.6;
+
+  --ls-wide: 0.18em;
+  --ls-normal: 0.01em;
+
+  /* ---- layout ---- */
+  --page-max: 1400px;
+  --page-pad: clamp(1.5rem, 4vw, 5rem);
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6rem;
+  --space-7: 9rem;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 0.3s;
+  --dur-med: 0.6s;
+  --dur-slow: 1.2s;
+
+  --nav-height: 84px;
+}

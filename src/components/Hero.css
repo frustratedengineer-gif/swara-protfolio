@@ -1,0 +1,206 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: -2%;
+  background:
+    radial-gradient(60% 55% at 78% 30%, rgba(201, 168, 118, 0.14) 0%, transparent 65%),
+    radial-gradient(80% 60% at 10% 90%, rgba(30, 25, 15, 0.5) 0%, transparent 60%),
+    linear-gradient(160deg, #0a0a0a 0%, #100d08 55%, #0a0a0a 100%);
+}
+
+.hero__vignette {
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 18vw 2vw rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+/* ---- midground: infinite marquee, subject centered in front of it ---- */
+.hero__marquee {
+  position: absolute;
+  inset-inline: 0;
+  top: 50%;
+  z-index: 1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero__marquee-track {
+  display: flex;
+  width: max-content;
+  white-space: nowrap;
+  font-family: var(--font-body);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1;
+  font-size: 15vh;
+  color: var(--color-text);
+  opacity: 0.92;
+  animation: hero-marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.hero__marquee-track span {
+  padding-right: 6vw;
+}
+
+@keyframes hero-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__marquee-track {
+    animation: none;
+  }
+}
+
+@media (min-width: 641px) {
+  .hero__marquee-track {
+    font-size: 24vh;
+  }
+}
+
+/* ---- foreground: portrait cutout, centered ---- */
+.hero__portrait {
+  position: absolute;
+  /* centered without `transform` (framer-motion already owns transform on
+     this element for the parallax x/y, and would silently override it) */
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin-inline: auto;
+  bottom: 0;
+  z-index: 2;
+  height: clamp(58vh, 78vh, 88vh);
+  pointer-events: none;
+}
+
+.hero__portrait-img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  /* graded, not raw color — reads as composed rather than a snapshot, with a
+     touch of warmth to match the background's warm gold ambient light */
+  filter: grayscale(0.45) sepia(0.14) saturate(1.15) contrast(1.1) brightness(0.98)
+    drop-shadow(0 30px 45px rgba(0, 0, 0, 0.55));
+}
+
+/* ---- top-right editorial meta detail ---- */
+.hero__meta {
+  position: absolute;
+  z-index: 3;
+  top: calc(var(--nav-height) + var(--space-3));
+  right: var(--page-pad);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+  font-size: var(--fs-small);
+  letter-spacing: var(--ls-normal);
+  color: var(--color-text-faint);
+}
+
+.hero__meta a {
+  color: var(--color-text-muted);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  font-size: var(--fs-eyebrow);
+}
+
+.hero__meta a:hover {
+  color: var(--color-accent);
+}
+
+/* ---- small foreground UI ---- */
+.hero__ui {
+  position: absolute;
+  z-index: 3;
+  left: var(--page-pad);
+  bottom: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  max-width: 320px;
+}
+
+.hero__actions {
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.hero__scroll {
+  position: absolute;
+  z-index: 3;
+  right: var(--page-pad);
+  bottom: var(--space-3);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: var(--fs-eyebrow);
+  letter-spacing: var(--ls-wide);
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.hero__scroll-line {
+  width: 32px;
+  height: 1px;
+  background: var(--color-accent);
+}
+
+@media (max-width: 980px) {
+  .hero__portrait {
+    height: clamp(56vh, 74vh, 82vh);
+  }
+}
+
+@media (max-width: 640px) {
+  /* mobile gets its own composition instead of the desktop "text behind
+     subject" overlap: at this width the portrait is nearly as wide as the
+     viewport, so the marquee is either fully hidden behind it or reduced to
+     unreadable slivers. Stack the two instead — a readable ticker band up
+     top, the portrait below it, clear space above the CTAs. */
+  .hero__marquee {
+    top: calc(var(--nav-height) + 6.5rem);
+  }
+  .hero__marquee-track {
+    font-size: 6vh;
+    opacity: 0.55;
+  }
+  .hero__portrait {
+    top: 35%;
+    bottom: auto;
+    height: clamp(32vh, 38vh, 42vh);
+  }
+  .hero__portrait-img {
+    /* dissolve the hard torso cutoff into the background rather than
+       showing it as a visible straight edge */
+    -webkit-mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 80%, transparent 100%);
+  }
+  .hero__ui {
+    left: 0;
+    right: 0;
+    bottom: var(--space-3);
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    padding-inline: var(--page-pad);
+  }
+  .hero__ui .hud-rec {
+    display: none;
+  }
+  .hero__actions {
+    justify-content: center;
+  }
+  .hero__scroll {
+    display: none;
+  }
+}

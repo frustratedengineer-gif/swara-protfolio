@@ -1,0 +1,14 @@
+{
+  "bio": [
+    "I'm Swara Shendge, the eye behind Frames by Swara — a cinematographer and photographer telling stories in light, shadow, and composition. I don't just capture moments, I tell stories.",
+    "Every frame starts with a question: what does this scene need to feel? From there it's patience — waiting for the right light, the right beat, the right expression — before the shutter ever moves."
+  ],
+  "philosophy": "Framing is my language, light is my grammar.",
+  "workWith": ["Light", "Shadow", "Composition", "Storytelling"],
+  "gear": ["Camera", "Lenses", "Lights", "Passion"],
+  "timeline": [
+    { "year": "2025", "title": "Founder & Lead Cinematographer", "org": "Frames by Swara", "desc": "Building an independent cinematography and photography practice across film, weddings, and commercial work." },
+    { "year": "2023", "title": "Professional Cinematography", "org": "Independent", "desc": "Began taking on wedding and commercial shoots, developing a signature light-first visual style." },
+    { "year": "2021", "title": "First Camera", "org": "Self-taught", "desc": "Started shooting portraits and documentary-style stories, learning light before anything else." }
+  ]
+}
